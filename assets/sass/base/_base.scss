@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+  
+    @include respond-to($bp-md){
+      width: 768px;
+    }
+    @include respond-to($bp-lg){
+      width: 992px;
+    }
+    @include respond-to($bp-xl){
+      width: 1200px;
+    }
+    
+  }
+  
