@@ -3,3 +3,11 @@ $bp-sm:576px;
 $bp-md:768px;
 $bp-lg:992px;
 $bp-xl:1200px;
+
+//colors
+$salmon:rgb(223, 119, 60);
+$cafe:rgba(151, 93, 45, 0.733);
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+$roboto-mono: 'Roboto Mono', monospace;

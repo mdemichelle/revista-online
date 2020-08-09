@@ -1,0 +1,26 @@
+.newsletter{
+    width: 100% auto;
+    background-color: #f2f4f5;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__h2{
+        font-size: 1.5rem;
+    }
+
+    &__group button{
+    display: inline-block;
+    border-width: 0;
+    font-size: 0.8125rem;
+    margin:5px;
+    padding: 5px 10px;
+    background-color: $salmon;
+    color: white;
+    }
+
+    &__group button:hover{
+        background-color: $cafe;
+    }
+}
+

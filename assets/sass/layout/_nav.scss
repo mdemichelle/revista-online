@@ -1,0 +1,92 @@
+//mobile first
+
+    
+.menu {
+    width: 100%;
+    border-bottom: 1px solid gray;
+
+    &__logo{
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+
+.nav{
+    display: inline-block;
+    width: 80%;
+    text-align: right;
+
+    &__lista{
+        text-transform: uppercase;  
+        display:inline-block
+    }
+    &__items{
+        //text-decoration: none;
+        display: inline;
+        margin:5px;  
+      
+    }
+    a{
+        color:$salmon;
+        text-decoration: none;
+    }
+    a:hover{
+        color: $cafe;
+    }
+    .nosotros{
+        display: none;
+    }
+    .input-menu{
+        border-radius: 30px;
+    }
+}
+}
+
+@include respond-to($bp-lg){
+
+    .menu {
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid gray;
+    
+        &__logo{
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+    
+    
+    .nav{
+        display: inline-block;
+        width: 80%;
+        text-align: right;
+    
+        &__lista{
+            text-transform: uppercase;  
+           display:inline-block
+        }
+        &__items{
+            display: inline;
+            margin:5px;  
+          
+        }
+        a{
+            color:$salmon;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $cafe;
+        }
+        .nosotros{
+            
+            display: inline;
+        }
+        .input-menu{
+            border-radius: 30px;
+        }
+    }
+}
+}

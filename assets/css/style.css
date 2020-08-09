@@ -1,18 +1,155 @@
-/* Error: Expected expression.
- *   ,
- * 6 |     grid-template-rows: ;
- *   |                         ^
- *   '
- *   assets\sass\layout\_grid.scss 6:25  @import
- *   assets\sass\main.scss 10:9          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a   \2577 \a 6 \2502      grid-template-rows: ;\d\a   \2502                          ^\a   \2575 \a   assets\\sass\\layout\\_grid.scss 6:25  @import\a   assets\\sass\\main.scss 10:9          root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+/* Reset*/
+body {
+  margin: 0;
 }
+
+img {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+.contenido {
+  margin: 0 auto;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .contenido {
+    width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  .contenido {
+    width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  .contenido {
+    width: 1200px;
+  }
+}
+
+.row {
+  display: grid;
+}
+
+.menu {
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+.menu__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.menu .nav {
+  display: inline-block;
+  width: 80%;
+  text-align: right;
+}
+.menu .nav__lista {
+  text-transform: uppercase;
+  display: inline-block;
+}
+.menu .nav__items {
+  display: inline;
+  margin: 5px;
+}
+.menu .nav a {
+  color: #df773c;
+  text-decoration: none;
+}
+.menu .nav a:hover {
+  color: rgba(151, 93, 45, 0.733);
+}
+.menu .nav .nosotros {
+  display: none;
+}
+.menu .nav .input-menu {
+  border-radius: 30px;
+}
+
+@media (min-width: 992px) {
+  .menu {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+  }
+  .menu__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  .menu .nav {
+    display: inline-block;
+    width: 80%;
+    text-align: right;
+  }
+  .menu .nav__lista {
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  .menu .nav__items {
+    display: inline;
+    margin: 5px;
+  }
+  .menu .nav a {
+    color: #df773c;
+    text-decoration: none;
+  }
+  .menu .nav a:hover {
+    color: rgba(151, 93, 45, 0.733);
+  }
+  .menu .nav .nosotros {
+    display: inline;
+  }
+  .menu .nav .input-menu {
+    border-radius: 30px;
+  }
+}
+.newsletter {
+  width: 100% auto;
+  background-color: #f2f4f5;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.newsletter__h2 {
+  font-size: 1.5rem;
+}
+.newsletter__group button {
+  display: inline-block;
+  border-width: 0;
+  font-size: 0.8125rem;
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #df773c;
+  color: white;
+}
+.newsletter__group button:hover {
+  background-color: rgba(151, 93, 45, 0.733);
+}
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid gray;
+}
+
+.footer:hover {
+  color: rgba(151, 93, 45, 0.733);
+}
+
+/*# sourceMappingURL=style.css.map */
