@@ -1,0 +1,93 @@
+
+//mobile first
+ //para xs y sm
+
+.contenido{
+    padding-top: 80px;
+}
+.contenedor-1{
+    width: 100%;
+    padding-left:30px;
+    padding-right: 30px;
+    
+}
+.contenedor-2{
+    display: none;
+}
+
+.noticia{
+    width: 100%;
+    margin: 10px auto;
+    padding: 20px;
+    cursor: pointer;
+
+    &__cuerpo{
+        height: 400px;
+       
+    }
+     &__cuerpo img {
+    width: 100%;
+    height: 100%;
+}
+}
+
+//para md
+@include respond-to($bp-md){
+    
+.contenido{
+    padding-top: 80px;
+}
+.contenedor-1{
+    width: 100%;
+    padding-left:30px;
+    padding-right: 30px;
+    
+}
+.contenedor-2{
+    display: none;
+}
+}
+ //para lg +
+@include respond-to($bp-lg){
+
+.contenedor-1{
+    float: left;
+    width: 75%;
+    padding-left:30px;
+    padding-right: 30px;
+}
+.contenedor-2{
+    display: inline-block;
+    width: 25%;
+    padding-right: 15px;
+}
+.cabecera-listado {
+    width: 220px;
+    border-bottom: 1px solid gray;
+}
+
+.tags{
+    border-bottom: 1px solid gray;
+
+    &__lista{
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item{
+    display: inline-block;
+    padding: 2px 4px;
+    background-color: steelblue;
+    margin-right: 1px;
+    color: white;
+    }
+}
+.destacadas{
+    margin-bottom: 50px;
+
+    &__image{
+        display:block;
+        margin: auto;
+    }
+}
+}

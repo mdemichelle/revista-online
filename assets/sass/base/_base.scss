@@ -3,24 +3,8 @@
 }
 
 body {
-    width: 100vw;
+   
     margin:0;
     font-family: $roboto-mono;
 }
 
-.contenido{
-    margin: 0 auto;
-    padding: 0 ;
-  
-    @include respond-to($bp-md){
-      width: 768px;
-    }
-    @include respond-to($bp-lg){
-      width: 992px;
-    }
-    @include respond-to($bp-xl){
-      width: 1200px;
-    }
-    
-  }
-  
